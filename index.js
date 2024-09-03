@@ -18,7 +18,7 @@ app.use(express.json()); // Parse JSON bodies
 
 // Routes
 app.get("/", (req, res) => {
-  res.json("API running...");
+  res.send("API is running");
 });
 app.use("/api/items", itemRoutes);
 
